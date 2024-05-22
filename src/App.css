@@ -32,7 +32,107 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 250px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  width: 200px;
+  border-radius: 15px;
+}
+
+.product-card h4 {
+  margin: 15px 0 5px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.product-card p {
+  font-size: 1em;
+  color: #666;
+}
+
+.ant-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 700px;
+  max-width: 1200px;
+  margin-top: 200px;
+}
+
+.form-item label {
+  font-weight: bold;
+  color: #333;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center !important;
+}
+
+.css-dev-only-do-not-override-1r287do{
+  justify-content: center;
+}
+
+.form-item input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.balance {
+  color: #282c34;
+}
+
+.balance-eksi {
+  color: red;
+}
+
+.fixed-balance {
+  position: fixed;
+  font-size: 42px;
+  top: 0; 
+  width: 100%; 
+  z-index: 999; 
+  background-color: #fff; 
+  padding: 10px; 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.testingb .product-card{
+  border-radius: 0px;
+}
+.testingb .product-card img {
+  border-radius: 0px !important;
 }
